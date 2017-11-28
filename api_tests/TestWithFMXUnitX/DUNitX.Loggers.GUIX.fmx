@@ -1,0 +1,380 @@
+object GUIXTestRunner: TGUIXTestRunner
+  Left = 0
+  Top = 0
+  Caption = 'DUNitX'
+  ClientHeight = 638
+  ClientWidth = 942
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object TopPanel: TPanel
+    Align = MostTop
+    Size.Width = 942.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Size.Width = 942.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnRunAll: TButton
+        Action = Run
+        Align = Left
+        Enabled = True
+        ImageIndex = -1
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object SelectFailedButton: TButton
+        Align = Right
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 858.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Select Failed'
+        OnClick = SelectFailedButtonClick
+      end
+      object lbCaption: TLabel
+        Align = HorzCenter
+        StyledSettings = [Family, FontColor]
+        Position.X = 271.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'TensorFlow Test V1.2'
+        TabOrder = 2
+      end
+    end
+  end
+  object PanelMiddle: TPanel
+    Align = Client
+    Size.Width = 942.000000000000000000
+    Size.Height = 463.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object TestTree: TTreeView
+      Align = Left
+      Size.Width = 450.000000000000000000
+      Size.Height = 463.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ShowCheckboxes = True
+      OnChangeCheck = TestTreeChangeCheck
+      Viewport.Width = 446.000000000000000000
+      Viewport.Height = 459.000000000000000000
+    end
+    object Splitter1: TSplitter
+      Align = Left
+      Cursor = crHSplit
+      MinSize = 20.000000000000000000
+      Position.X = 450.000000000000000000
+      Size.Width = 15.000000000000000000
+      Size.Height = 463.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object PanelRight: TPanel
+      Align = Client
+      Size.Width = 477.000000000000000000
+      Size.Height = 463.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object PanelBottomForFailDetail: TPanel
+        Align = Client
+        Size.Width = 477.000000000000000000
+        Size.Height = 326.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object FailList: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Left
+          Size.Width = 224.501708984375000000
+          Size.Height = 326.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnItemClick = FailListItemClick
+        end
+        object FailTestDetailPanel: TPanel
+          Align = Client
+          Size.Width = 252.498291015625000000
+          Size.Height = 326.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object StackTrace: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            ReadOnly = True
+            Align = Bottom
+            Locked = True
+            Position.Y = 188.000000000000000000
+            Size.Width = 252.498291015625000000
+            Size.Height = 138.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Viewport.Width = 248.500000000000000000
+            Viewport.Height = 134.000000000000000000
+          end
+          object Label3: TLabel
+            StyledSettings = [Family, Size, FontColor]
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 49.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Test'
+          end
+          object Label4: TLabel
+            StyledSettings = [Family, Size, FontColor]
+            Position.X = 8.000000000000000000
+            Position.Y = 24.000000000000000000
+            Size.Width = 57.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Start'
+          end
+          object FailTestName: TLabel
+            Anchors = [akLeft, akTop, akRight]
+            AutoSize = True
+            Position.X = 64.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 70.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+            Text = 'FailTestName'
+          end
+          object FailTestStartTime: TLabel
+            Position.X = 64.000000000000000000
+            Position.Y = 24.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'FailTestStartTime'
+          end
+          object Label7: TLabel
+            StyledSettings = [Family, Size, FontColor]
+            Position.X = 8.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 65.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Finish'
+          end
+          object FailTestFinishTime: TLabel
+            Position.X = 63.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'FailTestFinishTime'
+          end
+          object Label6: TLabel
+            Anchors = [akLeft, akBottom]
+            StyledSettings = [Family, Size, FontColor]
+            Position.X = 8.000000000000000000
+            Position.Y = 170.000000000000000000
+            Size.Width = 275.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Stack Trace'
+          end
+          object FailTestMessage: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            ReadOnly = True
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.Y = 80.000000000000000000
+            Size.Width = 252.499450683593800000
+            Size.Height = 76.500000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Viewport.Width = 248.500000000000000000
+            Viewport.Height = 72.500000000000000000
+          end
+          object Label8: TLabel
+            StyledSettings = [Family, Size, FontColor]
+            Position.X = 8.000000000000000000
+            Position.Y = 56.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Message'
+          end
+        end
+      end
+      object PanelTopForFailDetail: TPanel
+        Align = Top
+        Size.Width = 477.000000000000000000
+        Size.Height = 137.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label1: TLabel
+          StyledSettings = [Family, Size, FontColor]
+          Position.X = 16.000000000000000000
+          Position.Y = 32.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Runs'
+        end
+        object Label2: TLabel
+          StyledSettings = [Family, Size, FontColor]
+          Position.X = 16.000000000000000000
+          Position.Y = 48.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Sucess'
+        end
+        object SuccessTests: TLabel
+          Position.X = 104.000000000000000000
+          Position.Y = 48.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'SuccessTests'
+        end
+        object TotalRuns: TLabel
+          Position.X = 104.000000000000000000
+          Position.Y = 32.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'TotalRuns'
+        end
+        object Label5: TLabel
+          StyledSettings = [Family, Size, FontColor]
+          Position.X = 16.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Fail'
+        end
+        object FailTests: TLabel
+          Position.X = 104.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'FailTests'
+        end
+        object MemoryLeakedLabel: TLabel
+          StyledSettings = [Family, Size, FontColor]
+          Position.X = 16.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Leaked'
+        end
+        object MemoryLeaked: TLabel
+          Position.X = 104.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'MemoryLeaked'
+        end
+        object TestRunnerProgress: TProgressBar
+          Anchors = [akLeft, akTop, akRight]
+          Orientation = Horizontal
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 463.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object PanelBottom: TPanel
+    Align = Bottom
+    Position.Y = 496.000000000000000000
+    Size.Width = 942.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object txaProt: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 942.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 938.000000000000000000
+      Viewport.Height = 116.000000000000000000
+    end
+  end
+  object StatusBar: TStatusBar
+    Position.Y = 616.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 942.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object lbStatus: TLabel
+      Align = Left
+      Margins.Left = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = '...'
+      TabOrder = 2
+    end
+    object lbTFVersion: TLabel
+      Align = Right
+      Margins.Left = 8.000000000000000000
+      Position.X = 572.000000000000000000
+      Size.Width = 370.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = '...'
+      TabOrder = 1
+    end
+  end
+  object TestActions: TActionList
+    Left = 360
+    Top = 296
+    object Run: TAction
+      Text = 'Run All'
+      OnExecute = RunExecute
+    end
+  end
+end
