@@ -22,6 +22,8 @@ del /q api_tests\TestWithFMXUnitX\FMXTestTensorFlow.identcache
 del /q api_tests\TestWithFMXUnitX\FMXTestTensorFlow.stat
 del /q api_tests\TestWithFMXUnitX\FMXTestTensorFlow_project.tvsconfig
 
+rd /s /q api\__history
+rd /s /q api_tests\__history
 del /q bin\ConsoleTestTensorFlow.*
 del /q bin\FMXTestTensorFlow.*
 del /q bin\VCLTestTensorFlow.*

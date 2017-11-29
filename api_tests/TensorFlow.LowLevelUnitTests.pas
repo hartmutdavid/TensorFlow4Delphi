@@ -826,7 +826,7 @@ begin
  l_pAttrValue := TFEX_AllocAttrValue(l_pOpFeed, 'missing', l_pStatus);
  Assert.IsFalse(Assigned(l_pAttrValue), 'Assertion failed: TFEX_GetAttrValue delivered Nil');
  l_sStr := TF_Message(l_pStatus);
- Assert.IsTrue(Pos('Operation has no attr named',l_sStr) > 0, 'Assertion failed: Operation has no attr named "missing" ...');
+ Assert.IsTrue(Pos('has no attr named',l_sStr) > 0, 'Assertion failed: Operation "feed" has no attr named "missing" ...');
 
  // Make a constant oper with the scalar "3".
  l_pTensorInt32 := Int32Tensor(3);
