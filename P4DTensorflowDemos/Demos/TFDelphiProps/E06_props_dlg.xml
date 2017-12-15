@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>date1</name>
+    <dlg_type>dlg_date</dlg_type>
+    <caption>Date Selection 1 - from date ...</caption>
+    <prop_type>date_array</prop_type>
+    <date_from>01.01.2015</date_from>
+    <date_until>-</date_until>
+  </Prop>
+  <Prop>
+    <name>date2</name>
+    <dlg_type>dlg_date</dlg_type>
+    <caption>Date Selection 2 - ... until date</caption>
+    <prop_type>date_array</prop_type>
+    <date_from>-</date_from>
+    <date_until>31.12.2017</date_until>
+  </Prop>
+  <Prop>
+    <name>date3</name>
+    <dlg_type>dlg_date</dlg_type>
+    <caption>Date Selection 3 - from date... until date</caption>
+    <prop_type>date_array</prop_type>
+    <date_from>09.09.2015</date_from>
+    <date_until>31.08.2017</date_until>
+  </Prop>
+</TFDelphiProps>

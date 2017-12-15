@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>integer1</name>
+    <dlg_type>dlg_integer</dlg_type>
+    <caption>Integer 1</caption>
+    <prop_type>integer</prop_type>
+    <value>1</value>
+  </Prop>
+  <Prop>
+    <name>integer2</name>
+    <dlg_type>dlg_integer</dlg_type>
+    <caption>Integer 2</caption>
+    <prop_type>integer</prop_type>
+    <value>2</value>
+  </Prop>
+</TFDelphiProps>

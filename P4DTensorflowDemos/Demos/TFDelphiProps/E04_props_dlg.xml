@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>checkboxgroup1</name>
+    <dlg_type>dlg_checkboxgroup</dlg_type>
+    <caption>Checkbox Group 1</caption>
+    <prop_type>bool_array</prop_type>
+    <items_caption>Item 1;Item 2</items_caption>
+    <items_value>T;F</items_value>
+  </Prop>
+  <Prop>
+    <name>checkboxgroup2</name>
+    <dlg_type>dlg_checkboxgroup</dlg_type>
+    <caption>Checkbox Group 2</caption>
+    <prop_type>bool_array</prop_type>
+    <items_caption>Item 1;Item 2;Item 3;Item 4</items_caption>
+    <items_value>T;F;T;F</items_value>
+  </Prop>
+</TFDelphiProps>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>save_filename</name>
+    <dlg_type>dlg_file</dlg_type>
+    <caption>Spikes data restore from file:</caption>
+    <prop_type>string</prop_type>
+    <value>/tmp/spikes.ckpt</value>
+  </Prop>
+</TFDelphiProps>

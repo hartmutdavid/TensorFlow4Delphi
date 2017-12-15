@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>string1</name>
+    <dlg_type>dlg_string</dlg_type>
+    <caption>String 1</caption>
+    <prop_type>string</prop_type>
+    <value>Default 1</value>
+  </Prop>
+  <Prop>
+    <name>integer1</name>
+    <dlg_type>dlg_integer</dlg_type>
+    <caption>Integer 1</caption>
+    <prop_type>integer</prop_type>
+    <value>11</value>
+  </Prop>
+  <Prop>
+    <name>radiogroup1</name>
+    <dlg_type>dlg_radiogroup</dlg_type>
+    <caption>Radiogroup 1</caption>
+    <prop_type>integer</prop_type>
+    <items_caption>Item 1;Item 2;Item 3;Item 4</items_caption>
+    <value>0</value>
+  </Prop>
+  <Prop>
+    <name>checkboxgroup1</name>
+    <dlg_type>dlg_checkboxgroup</dlg_type>
+    <caption>Checkbox Group 1</caption>
+    <prop_type>bool_array</prop_type>
+    <items_caption>Item 1;Item 2;Item 3;Item 4</items_caption>
+    <items_value>T;F;T;F</items_value>
+  </Prop>
+  <Prop>
+    <name>filename1</name>
+    <dlg_type>dlg_file</dlg_type>
+    <caption>File Selection 1</caption>
+    <prop_type>string</prop_type>
+    <value>file_XYZ</value>
+  </Prop>
+  <Prop>
+    <name>date1</name>
+    <dlg_type>dlg_date</dlg_type>
+    <caption>Date Selection 1 - from date... until date</caption>
+    <prop_type>date_array</prop_type>
+    <date_from>09.09.2015</date_from>
+    <date_until>31.08.2017</date_until>
+  </Prop>
+</TFDelphiProps>

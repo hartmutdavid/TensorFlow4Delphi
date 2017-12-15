@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>filename1</name>
+    <dlg_type>dlg_file</dlg_type>
+    <caption>File Selection 1</caption>
+    <prop_type>string</prop_type>
+    <value>fileXY1</value>
+  </Prop>
+  <Prop>
+    <name>filename2</name>
+    <dlg_type>dlg_file</dlg_type>
+    <caption>File Selection 2</caption>
+    <prop_type>string</prop_type>
+    <value>fileXY2</value>
+  </Prop>
+</TFDelphiProps>

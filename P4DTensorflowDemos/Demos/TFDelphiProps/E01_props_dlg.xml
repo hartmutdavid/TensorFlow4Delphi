@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>string1</name>
+    <dlg_type>dlg_string</dlg_type>
+    <caption>String 1</caption>
+    <prop_type>string</prop_type>
+    <value>Default 1</value>
+  </Prop>
+  <Prop>
+    <name>string2</name>
+    <dlg_type>dlg_string</dlg_type>
+    <caption>String 2</caption>
+    <prop_type>string</prop_type>
+    <value>Default 2</value>
+  </Prop>
+  <Prop>
+    <name>string3</name>
+    <dlg_type>dlg_string</dlg_type>
+    <caption>String 3</caption>
+    <prop_type>string</prop_type>
+    <value>Default 3</value>
+  </Prop>
+</TFDelphiProps>

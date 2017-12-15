@@ -30,4 +30,14 @@ del /q bin\VCLTestTensorFlow.*
 del /q bin\dunitx.*
 del /q bin\*.xml
 
+rd /s /q P4DTensorflowDemos\P4DDemoControl\__history
+rd /s /q P4DTensorflowDemos\P4DDemoControl\__recovery
+rd /s /q P4DTensorflowDemos\P4DDemoControl\Win64
+del /q P4DTensorflowDemos\P4DDemoControl.exe
+del /q P4DTensorflowDemos\P4DDemoControl.rsm
+del /q P4DTensorflowDemos\P4DDemoControl\P4DDemoControl.dproj.local
+del /q P4DTensorflowDemos\P4DDemoControl\P4DDemoControl.identcache
+del /q P4DTensorflowDemos\P4DDemoControl\P4DDemoControl.stat
+del /q P4DTensorflowDemos\P4DDemoControl_MemoryManager_EventLog.txt
+
 Pause

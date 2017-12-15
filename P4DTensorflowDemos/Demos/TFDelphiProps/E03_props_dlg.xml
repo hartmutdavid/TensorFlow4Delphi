@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TFDelphiProps>
+  <Prop>
+    <name>radiogroup1</name>
+    <dlg_type>dlg_radiogroup</dlg_type>
+    <caption>Radiogroup 1</caption>
+    <prop_type>integer</prop_type>
+    <items_caption>Item 1;Item 2</items_caption>
+    <value>1</value>
+  </Prop>
+  <Prop>
+    <name>radiogroup2</name>
+    <dlg_type>dlg_radiogroup</dlg_type>
+    <caption>Radiogroup 2</caption>
+    <prop_type>integer</prop_type>
+    <items_caption>Item 1;Item 2;Item 3;Item 4</items_caption>
+    <value>2</value>
+  </Prop>
+</TFDelphiProps>
