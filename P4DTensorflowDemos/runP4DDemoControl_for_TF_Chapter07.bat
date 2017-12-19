@@ -1,0 +1,2 @@
+P4DDemoControl.exe -Dir Demos\Machine_Learning_with_TensorFlow\Chapter07
+Pause
